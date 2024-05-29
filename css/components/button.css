@@ -1,0 +1,49 @@
+.btn-blue {
+    display: inline-block;
+    padding: 10px 20px;
+    background: 
+      radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2) 1%, transparent 1%), /* small central light spot */
+      radial-gradient(circle, rgba(28,24,78,1) 40%, rgba(17,12,43,1) 60%),
+      repeating-radial-gradient(circle, transparent, transparent 5px, rgba(255,255,255,0.3) 6px); /* stars pattern */
+    background-size: cover, cover, 10px 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 0 15px rgba(115, 115, 255, 0.75); /* subtle galactic glow */
+    transition: background-color 0.3s, box-shadow 0.5s, transform 0.3s; /* smooth transitions for hover effects */
+    transform: scale(1); /* default scale */
+  }
+  
+  .btn-blue:hover {
+    background-color: rgba(17,12,43,0.8); /* darker shade on hover to emphasize the Milky Way */
+    box-shadow: 0 0 25px var(--token-b540ecc2-5c0b-4f0f-acee-f23f74a43d1c, rgb(0, 164, 240)); /* brighter and larger glow on hover */
+    transform: scale(1.05); /* slightly larger on hover */
+  
+  }
+  
+
+
+
+.btn-space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: sans-serif;
+    background: linear-gradient(270deg, var(--token-b540ecc2-5c0b-4f0f-acee-f23f74a43d1c, rgb(0, 164, 240)) 0%, var(--token-270e660b-3cdc-45ff-b4c0-3aba41912762, rgb(71, 82, 230)) 100%);
+    color: white;
+    border-radius: 1000px;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px var(--token-b540ecc2-5c0b-4f0f-acee-f23f74a43d1c, rgb(0, 164, 240));
+    cursor: pointer;
+    position: relative; /* Changed from absolute for general use */
+    z-index: 1;
+    opacity: 1;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+    gap: 10px;
+}
+

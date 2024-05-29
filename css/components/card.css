@@ -1,0 +1,45 @@
+/* CSS for the Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card {
+    flex-basis: calc(33.333% - 20px); 
+    flex-direction: column; 
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h3 {
+    flex-grow: 1;
+    margin-left: 20px;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
